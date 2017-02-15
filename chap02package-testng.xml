@@ -1,0 +1,9 @@
+<suite name="Package Suite" verbose="1">
+    <test name="Package Test">
+        <packages>
+            <package name="com.chap02.firstpackage" />
+            <package name="com.chap02.secondpackage" />
+            <!--<package name="com.*" />-->
+        </packages>
+    </test>
+</suite>

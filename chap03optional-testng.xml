@@ -1,0 +1,16 @@
+<suite name="Optional test Suite" verbose="1">
+    <test name="Optional Test one">
+        <classes>
+            <class name="com.chap03.Parameter.OptionalTest" />
+        </classes>
+    </test>
+    <test name="Optional Test two">
+        <parameter name="optional-value" value="passed from xml" />
+        <classes>
+            <class name="com.chap03.Parameter.OptionalTest" />
+        </classes>
+    </test>
+</suite>
+       <!-- No parameter is defined in the
+        first test where as the second test declares a parameter named optional-value
+        in it. Both contain the same test class for test execution-->

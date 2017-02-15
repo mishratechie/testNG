@@ -1,0 +1,7 @@
+<suite name="Inheritance Suite" verbose="1" >
+    <test name="Inheritance Test" >
+        <classes>
+            <class name="com.chap03.annotation.extendedclass.TestClass" />
+        </classes>
+    </test>
+</suite>

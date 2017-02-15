@@ -1,0 +1,46 @@
+<!--for : \TestNG\src\test\java\org\testng\annotation\beforeafter\TestClass.java-->
+
+<suite name="First Suite" verbose="1">
+    <test name="First Test">
+        <classes>
+            <class name="com.chap03.annotation.beforeafter.TestClass">
+                <methods>
+                    <include name="testOneMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Second Test">
+        <classes>
+            <class name="com.chap03.annotation.beforeafter.TestClass">
+                <methods>
+                    <include name="testTwoMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+       <!-- output:
+        Running TestSuite
+        Before Suite method
+        Before Test method
+        Before Class method
+        Before Group Test One method
+        Before Method
+        Test one method
+        After Method
+        After Group Test One method
+        After Class method
+        After Test method
+        Before Test method
+        Before Class method
+        Before Group Test two method
+        Before Method
+        Test two method
+        After Method
+        After Group Test two method
+        After Class method
+        After Test method
+        After Suite method
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 sec - in TestSuite-->
