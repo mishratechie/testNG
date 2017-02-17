@@ -1,4 +1,4 @@
-package com.chap03.Parameter;
+package com.chap03.parameter;
 
 /**
  * Created by Ashutosh on 13-01-2017.

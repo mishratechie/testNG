@@ -2,7 +2,7 @@
     <parameter name="suite-param" value="suite level parameter"/>
         <test name="Parameter Test one">
         <classes>
-            <class name="com.chap03.Parameter.ParameterTest">
+            <class name="com.chap03.parameter.ParameterTest">
                 <methods>
                     <include name="prameterTestOne"/>
                 </methods>
@@ -13,7 +13,7 @@
     <test name="Parameter Test two">
         <parameter name="test-two-param" value="Test two parameter"/>
         <classes>
-            <class name="com.chap03.Parameter.ParameterTest">
+            <class name="com.chap03.parameter.ParameterTest">
                 <methods>
                     <include name="prameterTestTwo"/>
                 </methods>
@@ -24,7 +24,7 @@
         <parameter name="suite-param" value="overiding suite parameter"/> <!--if you comment this out ,overiding wont happen and first set value will be used.-->
         <parameter name="test-three-param" value="test three parameter"/>
         <classes>
-            <class name="com.chap03.Parameter.ParameterTest">
+            <class name="com.chap03.parameter.ParameterTest">
                 <methods>
                     <include name="prameterTestThree"/>
                 </methods>

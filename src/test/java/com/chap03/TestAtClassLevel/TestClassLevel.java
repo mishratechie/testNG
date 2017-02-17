@@ -1,4 +1,4 @@
-package com.chap03.TestAtClassLevel;
+package com.chap03.testatclasslevel;
 
 import org.testng.annotations.Test;
 

@@ -46,7 +46,7 @@
                     <!--Simply run the mvn clean install command or mvn test-->
                     <suiteXmlFiles>
                         <!-- TestNG suite XML files -->
-                        <suiteXmlFile>chap01testng.xml</suiteXmlFile>
+                        <suiteXmlFile>chap04testgroups.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
