@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 /**
  * Created by Ashutosh on 16-02-2017.
  */
+
 public class SimpleDependencyTest {
 
     @Test(dependsOnMethods = {"testTwo"})

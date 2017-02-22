@@ -1,0 +1,7 @@
+<suite name="Simple Suite" parallel="methods" thread-count="2" >
+    <test name="Simple test">
+        <classes>s
+            <class name="com.chap07.methodlevelparallelism.SimpleClass" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,7 @@
+<suite name="Independent test Suite" >
+    <test name="Independent test">
+        <classes>
+            <class name="com.chap07.independentmethod.IndependentTestThreading" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,54 @@
+  <!--http://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html-->
+        <!--
+                Running suites in parallel
+                </plugins>
+                [...]
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19.1</version>
+        <configuration>
+            <suiteXmlFiles>
+                <file>src/test/resources/testng1.xml</file>
+                <file>src/test/resources/testng2.xml</file>
+            </suiteXmlFiles>
+            <properties>
+                <property>
+                    <name>suitethreadpoolsize</name>
+                    <value>2</value>
+                </property>
+            </properties>
+        </configuration>
+        </plugin>
+                [...]
+                </plugins>-->
+
+        <!--Different configurations to be used with Maven
+        Maven also has similar configurations to Ant that can be used. Following are few of the
+        configurations that can be used with the Surefire plugin when using Maven as a build tool:
+         groups: The list of the groups to run separated by commas or spaces
+         excludedgroups: The list of groups to be excluded from the test execution
+         listeners: A list of comma separated by class names that implements the TestNG
+        ITestListener or IReporter and needs to be added as listener
+         outputdir: The output directory for generation of the report
+         parallel: The parallel mode to use either methods, classes, or tests
+         threadCount: Number of threads that can be used for the run
+         testname: Sets the default test name for the test
+         timeOut: The maximum time in milliseconds within which the individual tests
+        should get executed
+        The above configurations can be used as XML tags for configuration while using the Surefire
+        plugin to the said Ant task. Following is a simple example code to use the threadCount and
+        parallel option with the testng task:
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>2.14.1</version>
+<configuration>
+    &lt;!&ndash; Suite testng xml file to consider for test execution &ndash;&gt;
+    <suiteXmlFiles>
+        <suiteXmlFile>testng.xml</suiteXmlFile>
+    </suiteXmlFiles>
+    <parallel>tests</parallel>
+    <threadCount>5</threadCount>
+</configuration>
+</plugin>-->
